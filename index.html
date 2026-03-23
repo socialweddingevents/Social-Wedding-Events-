@@ -1,92 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Social Wedding Events</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Wedding Event</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#fff8f5;color:#333}
-header{position:fixed;width:100%;top:0;background:rgba(107,15,26,0.9);color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;z-index:1000}
-header h1{font-family:'Great Vibes',cursive;font-size:28px}
-nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500}
-.hero{height:100vh;background:url('https://images.unsplash.com/photo-1519741497674-611481863552') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;position:relative}
-.hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5)}
-.hero-content{position:relative;z-index:2;animation:fadeIn 2s ease}
-.hero h2{font-size:50px;font-family:'Great Vibes',cursive}
-.hero p{margin-top:10px;font-size:18px}
-.btn{margin-top:20px;background:#d4af37;color:#000;padding:12px 25px;border:none;border-radius:30px;cursor:pointer;font-weight:bold;transition:0.3s}
-.btn:hover{transform:scale(1.1)}
-.section{padding:80px 20px;text-align:center}
-.services{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
-.card{background:#fff;padding:25px;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.1);width:260px;transition:0.4s}
-.card:hover{transform:translateY(-10px)}
-.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
-.gallery img{width:100%;border-radius:10px;transition:0.4s}
-.gallery img:hover{transform:scale(1.05)}
-.testimonial{max-width:600px;margin:20px auto;font-style:italic}
-.contact{background:#6b0f1a;color:#fff}
-footer{background:#000;color:#fff;text-align:center;padding:20px}
-@keyframes fadeIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f8f8f8;
+}
+
+header {
+    background: #000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button */
+.book-btn {
+    display: block;
+    width: 220px;
+    margin: 25px auto;
+    padding: 14px;
+    background: #25D366;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* WhatsApp Section */
+.whatsapp-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-details {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>SWE</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#gallery">Gallery</a>
-<a href="#contact">Contact</a>
-</nav>
+    <h1>Social Wedding Event</h1>
 </header>
 
-<section class="hero">
-<div class="hero-content>
-<h2>Dream Weddings</h2>
-<p>We Plan Your Dream Celebration 💍</p>
-<a href="https://wa.me/918003283288?text=Hello%20I%20want%20to%20book%20wedding%20services" target="_blank">
-  <button class="btn">Book Now</button>
-</a>
-</a>
-</section>
+<div class="container">
 
-<section class="section" id="services">
-<h2>Our Services</h2>
-<div class="services">
-<div class="card">Wedding Planning</div>
-<div class="card">Engagement Events</div>
-<div class="card">Haldi & Mehndi</div>
-<div class="card">Theme Decor</div>
-<div class="card">Destination Weddings</div>
+    <h2>Our Work</h2>
+
+    <!-- IMPORTANT NOTE -->
+    <p style="text-align:center; color:red;">
+        👉 Photos load करने के लिए Google Photos link को direct image link में बदलना पड़ेगा (नीचे बताया है)
+    </p>
+
+    <div class="gallery">
+        <!-- Example images (replace later) -->
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+        <img src="https://via.placeholder.com/300">
+    </div>
+
+    <!-- Book Now Button -->
+    <a href="#" class="book-btn" onclick="openWhatsApp()">Book Now on WhatsApp</a>
+
+    <!-- WhatsApp Details -->
+    <div class="whatsapp-section">
+        <h3>Contact Details</h3>
+
+        <div class="whatsapp-details">
+            <p><strong>Business:</strong> Social Wedding Event</p>
+            <p><strong>Phone:</strong> +91 8003283288</p>
+            <p><strong>Service:</strong> Wedding & Event Management</p>
+        </div>
+    </div>
+
 </div>
-</section>
 
-<section class="section" id="gallery">
-<h2>Gallery</h2>
-<div class="gallery">
-<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486" />
-<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc" />
-<img src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d" />
-</div>
-</section>
+<script>
 
-<section class="section">
-<h2>What Clients Say</h2>
-<p class="testimonial">"Best decision ever! SWE made our wedding magical ✨"</p>
-</section>
+let phoneNumber = "918003283288";
 
-<section class="section contact" id="contact">
-<h2>Contact Us</h2>
-<p>📞 8003283288</p>
-<button class="btn">WhatsApp Now</button>
-</section>
+function openWhatsApp() {
+    let message = "Hello, I want to book Social Wedding Event!";
+    let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
 
-<footer>
-<p>© 2026 Social Wedding Events</p>
-</footer>
+</script>
 
 </body>
-</html>
+  </html>
